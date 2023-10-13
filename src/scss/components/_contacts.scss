@@ -83,3 +83,46 @@
         }
     }
 }
+
+[data-theme='light'] {
+    .contacts__container {
+        .contact__options {
+            .contact__option {
+                a {
+                    color: var(--color-white);
+                }
+                &:hover {
+                    border-color: var(--color-primary);
+                    a {
+                        color: var(--color-black);
+                        &:hover {
+                            color: var(--color-primary);
+                        }
+                    }
+                    svg {
+                        color: var(--color-primary);
+                    }
+
+                    h4 {
+                        color: var(--color-primary);
+                    }
+
+                    small {
+                        color: var(--color-black);
+                    }
+                }
+            }
+        }
+
+        form {
+            input,
+            textarea {
+                color: var(--color-primary);
+                border: 2px solid var(--color-primary);
+                &::placeholder {
+                    color: var(--color-primary);
+                }
+            }
+        }
+    }
+}

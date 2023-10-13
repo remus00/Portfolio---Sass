@@ -72,3 +72,18 @@
         }
     }
 }
+
+[data-theme='light'] {
+    .portfolio__container {
+        .portfolio__item {
+            &:hover {
+                border-color: var(--color-primary);
+                background: transparent;
+
+                h3 {
+                    color: var(--color-primary);
+                }
+            }
+        }
+    }
+}

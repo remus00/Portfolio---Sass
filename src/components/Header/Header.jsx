@@ -19,6 +19,10 @@ const Header = ({ currentTheme, changeTheme }) => {
                     <img src={photo} alt="me" />
                 </div>
 
+                <a href="#contacts" className="scroll__down">
+                    Scroll Down
+                </a>
+
                 <div className="theme-toggler" onClick={changeTheme}>
                     {currentTheme === 'dark' ? (
                         <ImSun className="light" />
@@ -26,10 +30,6 @@ const Header = ({ currentTheme, changeTheme }) => {
                         <BsFillMoonFill className="dark" />
                     )}
                 </div>
-
-                <a href="#contacts" className="scroll__down">
-                    Scroll Down
-                </a>
             </div>
         </header>
     );

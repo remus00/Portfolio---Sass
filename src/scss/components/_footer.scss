@@ -66,3 +66,31 @@ footer {
         }
     }
 }
+
+[data-theme='light'] {
+    footer {
+        background: var(--color-primary);
+
+        a {
+            &:hover {
+                color: var(--color-black);
+            }
+        }
+
+        .footer__socials {
+            a {
+                color: var(--color-white);
+                background: var(--color-white);
+                svg {
+                    color: var(--color-primary);
+                }
+                &:hover {
+                    background: transparent;
+                    svg {
+                        color: var(--color-white);
+                    }
+                }
+            }
+        }
+    }
+}

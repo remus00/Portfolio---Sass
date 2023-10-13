@@ -82,6 +82,12 @@
                     &:hover {
                         transform: none;
                     }
+
+                    .about__icon {
+                        &:hover {
+                            color: var(--color-primary);
+                        }
+                    }
                 }
             }
         }
@@ -103,6 +109,7 @@
             .about__cards {
                 grid-template-columns: 1fr 1fr;
                 gap: 1rem;
+                color: var(--color-black-light);
 
                 .about__card {
                     &:hover {
@@ -114,20 +121,41 @@
     }
 }
 
-/* [data-theme='light'] {
+[data-theme='light'] {
     .about__container {
+        .about__content {
+            h5 {
+                color: var(--color-white);
+            }
+
+            p {
+                color: var(--color-black-light);
+            }
+        }
         .about__cards {
             .about__card {
-                background: red;
+                background: var(--color-primary);
 
                 &:hover {
-                    border-color: var(--color-primary-variant);
+                    border-color: var(--color-primary);
+
+                    svg {
+                        color: var(--color-primary);
+                    }
+
+                    h5 {
+                        color: var(--color-primary);
+                    }
+
+                    small {
+                        color: var(--color-black);
+                    }
                 }
 
                 .about__icon {
-                    color: var(--color-primary);
+                    color: var(--color-white);
                 }
             }
         }
     }
-} */
+}
