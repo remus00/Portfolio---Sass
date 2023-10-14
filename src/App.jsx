@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './scss/index.scss';
 import Header from './components/Header/Header';
 import About from './components/About';
@@ -10,10 +10,16 @@ import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 
 const App = () => {
-    const [theme, setTheme] = useState('dark');
+    const [theme, setTheme] = useState(localStorage.getItem('PortfolioTheme') || 'dark');
+
     const changeTheme = () => {
         theme === 'dark' ? setTheme('light') : setTheme('dark');
     };
+
+    useEffect(() => {
+        localStorage.setItem('PortfolioTheme', theme);
+    }, [theme]);
+
     return (
         <div className="app-container" data-theme={theme}>
             <Header currentTheme={theme} changeTheme={changeTheme} />

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import CTA from './CTA';
 import photo from '../../assets/photo.png';
 import HeaderSocials from './HeaderSocials';

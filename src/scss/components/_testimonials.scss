@@ -44,3 +44,13 @@
         }
     }
 }
+
+[data-theme='light'] {
+    .testimonials__container {
+        .testimonial {
+            .client__avatar {
+                border: 0.2rem solid var(--color-bg);
+            }
+        }
+    }
+}
