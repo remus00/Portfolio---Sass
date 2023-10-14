@@ -88,10 +88,13 @@
     .contacts__container {
         .contact__options {
             .contact__option {
+                background: var(--color-primary);
                 a {
                     color: var(--color-white);
                 }
                 &:hover {
+                    background: var(--color-bg);
+
                     border-color: var(--color-primary);
                     a {
                         color: var(--color-black);
