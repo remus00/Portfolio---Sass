@@ -42,8 +42,7 @@ const About = () => {
                         Hi my name is Marian Remus Burlacu but you can just call me Remus.
                         <br />
                         I'm a front end developer based in Turin with a keen eye for designing good
-                        looking and user friendly web application and I'm also studying UI/UX
-                        design.
+                        looking and user friendly web application.
                         <br />I would love to expand my horizons by gaining experience, improving
                         and becoming the best version of myself.
                     </p>
