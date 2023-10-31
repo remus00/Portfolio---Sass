@@ -22,7 +22,7 @@ const About = () => {
                         <article className="about__card">
                             <FaAward className="about__icon" />
                             <h5>Experience</h5>
-                            <small>I worked on several Personal Projects</small>
+                            <small>I'm currently a front-end intern working in a startup</small>
                         </article>
 
                         <article className="about__card">
@@ -42,7 +42,8 @@ const About = () => {
                         Hi my name is Marian Remus Burlacu but you can just call me Remus.
                         <br />
                         I'm a front end developer based in Turin with a keen eye for designing good
-                        looking and user friendly web application.
+                        looking and user friendly web application and I'm also studying UI/UX
+                        design.
                         <br />I would love to expand my horizons by gaining experience, improving
                         and becoming the best version of myself.
                     </p>
